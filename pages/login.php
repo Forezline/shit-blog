@@ -66,18 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['reset_password'])) {
     }
 }
 ?>
-
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вхід</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-</head>
-<body>
-
-<main>
+    
     <h2>Вхід</h2>
 
     <?php if (isset($_SESSION['error'])): ?>
@@ -119,6 +108,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['reset_password'])) {
         document.getElementById('reset-password-form').style.display = 'block';
     });
 </script>
-
-</body>
-</html>
+<?php include '../includes/blocks/footer.php';?>
