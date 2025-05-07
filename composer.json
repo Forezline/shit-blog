@@ -1,0 +1,17 @@
+{
+    "name": "forezline/shit-blog",
+    "description": "Just shitty blog with easy functions like - making new posts, registration and others...",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "forezline"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
