@@ -100,7 +100,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_POST['reset_password'])) {
 
         <button type="submit">Скинути пароль</button>
     </form>
-</main>
 
 <script>
     document.getElementById('show-reset').addEventListener('click', function (e) {
