@@ -63,7 +63,7 @@ CREATE TABLE `password_resets` (
 --
 
 INSERT INTO `password_resets` (`id`, `email`, `token`, `created_at`) VALUES
-(1, 'bohdanopihajlenko97@gmail.com', '228ea4f96bd3c04e560f4786fd7179fa9ea5eb542b6138fe9c6c994749f034c0', '2025-05-07 01:38:06');
+(1, 'example@example.com', '228ea4f96bd3c04e560f4786fd7179fa9ea5eb542b6138fe9c6c994749f034c0', '2025-05-07 01:38:06');
 
 -- --------------------------------------------------------
 
