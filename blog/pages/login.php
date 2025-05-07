@@ -4,6 +4,8 @@ require_once('../includes/db.php');
 require_once('../includes/functions.php');
 require_once('../includes/mail.php');  // Підключаємо файл для відправки email
 
+include('../includes/header.php');
+
 // Обробка скидання паролю
 if (isset($_POST['reset_password'])) {
     $email = sanitizeInput($_POST['email']);
