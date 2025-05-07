@@ -26,29 +26,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         redirect('/pages/login.php');
     }
 }
-?>
-
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вхід</title>
-</head>
-<body>
-    <h2>Вхід</h2>
-    <?php if (isset($_SESSION['error'])): ?>
-        <p style="color: red;"><?= $_SESSION['error']; unset($_SESSION['error']); ?></p>
-    <?php endif; ?>
-    
-    <form method="post">
-        <label for="email">Електронна пошта</label><br>
-        <input type="email" name="email" id="email" required><br>
-        
-        <label for="password">Пароль</label><br>
-        <input type="password" name="password" id="password" required><br>
-        
-        <button type="submit">Увійти</button>
-    </form>
-</body>
-</html>
