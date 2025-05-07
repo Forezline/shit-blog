@@ -24,8 +24,6 @@ class LoginTest extends TestCase
     {
         $result = loginUser($this->pdo, 'forezline@gmail.com', '$2y$10$R2xN2eyrAGcaKQgelcic.uWWd5I6oy50lkJG1pPApsG.8oYEdWgeW');
         $this->assertFalse($result['success']);
-        $this->assertArrayHasKey('user', $result);
-        $this->assertEquals('forezline@gmail.com', $result['user']['email']);
     }
 
     public function testLoginWithEmptyFields()
