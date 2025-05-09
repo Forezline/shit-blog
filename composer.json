@@ -19,7 +19,6 @@
     },
     "require": {
         "codeception/codeception": "^5.1",
-        "codeception/module-phpbrowser": "^3.0",
-        "codeception/module-asserts": "*"
+        "codeception/module-phpbrowser": "^3.0"
     }
 }
